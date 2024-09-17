@@ -1,0 +1,29 @@
+﻿<Window x:Class="Notas_Musicales.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notas_Musicales"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF0F2C5B">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="781*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="btdo1" Margin="16,35,666,191" Content="DO" FontSize="25" FontWeight="Bold" Click="btdo1_Click" Foreground="Black" Background="White"/>
+        <Button Name="btre1" Margin="96,35,577,191" Content="RE" FontSize="25" FontWeight="Bold" Click="btre1_Click" Foreground="Black" Background="White"/>
+        <Button Name="btmi1" Margin="179,35,490,191" Content="MI" FontSize="25" FontWeight="Bold" Click="btmi1_Click" Foreground="Black" Background="White"/>
+        <Button Name="btfa1" Margin="274,35,391,191" Content="FA" FontSize="25" FontWeight="Bold" Click="btfa1_Click" Foreground="Black" Background="White"/>
+        <Button Name="btsol1" Margin="369,35,300,191" Content="SOL" FontSize="25" FontWeight="Bold" Click="btsol1_Click" Foreground="Black" Background="White"/>
+        <Button Name="btla1" Margin="464,35,206,191" Content="LA" FontSize="25" FontWeight="Bold" Click="btla1_Click" Foreground="Black" Background="White"/>
+        <Button Name="btsi1" Margin="559,35,115,191" Content="SI" FontSize="25" FontWeight="Bold" Click="btsi1_Click" Foreground="Black" Background="White"/>
+        <Button Margin="68,35,644,314" Content="DO#" FontSize="25" FontWeight="Bold" Background="Black" Foreground="White" Click="Button_Click"/>
+        <RadioButton Name="rBpiano" Content="Piano" FontWeight="Bold" FontSize="20" Margin="50,373,520,10" Foreground="#FFE6F0FF"/>
+        <Button Name="btfirma" Margin="559,336,54,29" Content="Firma" FontSize="25" FontWeight="Bold" Click="btfirma_Click" Foreground="Black" Background="White"/>
+        <ListBox Name="lBsalida" Margin="16,255,410,66" Background="#FFA2BDFF" Foreground="White" FontSize="14" FontFamily="Arial Rounded MT Bold">
+            <ListBoxItem Content="Nota    Octava      Frecuencia" Width="326"/>
+        </ListBox>
+
+    </Grid>
+</Window>
